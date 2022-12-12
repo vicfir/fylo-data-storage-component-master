@@ -10894,4 +10894,31 @@ main {
   color: hsl(243deg, 100%, 93%);
 }
 
+@media screen and (max-width: 376px) {
+  main {
+    flex-direction: column;
+  }
+  #div1 {
+    margin: 0 !important;
+    width: 90%;
+  }
+  #div2 {
+    width: 90%;
+    margin-top: 70px;
+  }
+  #div2 .talkbubble {
+    top: 80%;
+    right: 5%;
+    transform: translate(-50%, 0%);
+    width: 150px;
+    height: 70px;
+  }
+  #div2 .talkbubble p .big {
+    font-size: 35px;
+  }
+  #div2 .talkbubble:before {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */

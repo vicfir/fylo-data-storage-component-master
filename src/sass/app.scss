@@ -121,19 +121,6 @@ main {
     border-bottom: 0px solid transparent;
     }
     
-    // .talkbubble p{
-    // position: inherit;
-    // width: inherit;
-    // height: inherit;
-    // background: inherit;
-    
-    // margin: 0;
-    // padding: 0;
-    
-    // border: none;
-    // resize: none;
-    // }
-
     #bgCutDiv2 {
         background-color: hsl(228, 56%, 26%);
         border-radius: 10px;
@@ -153,7 +140,38 @@ main {
         margin: 0;
         color: hsl(243, 100%, 93%);
     }
+}
 
-    #gb {
+@media screen and (max-width: 376px ){
+
+main {
+    flex-direction: column;
+}
+
+#div1 {
+    margin: 0 !important;
+    width: 90%;
+}
+
+#div2 {
+    width: 90%;
+    margin-top: 70px;
+
+    .talkbubble {
+        top: 80%;
+        right: 5%;
+        transform: translate(-50%, 0%);
+        width: 150px;
+        height: 70px;
+        p {
+            .big {
+                font-size: 35px;
+            }
+        }
     }
+
+    .talkbubble:before {
+        display: none;
+    }
+}
 }
