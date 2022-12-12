@@ -10789,7 +10789,6 @@ main {
 }
 
 #div1 {
-  background-color: hsl(228deg, 56%, 26%);
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -10797,7 +10796,11 @@ main {
 }
 #div1 #bgCutDiv1 {
   background-color: hsl(228deg, 56%, 26%);
-  padding-bottom: 20px;
+  border-radius: 10px 80px 10px 10px;
+  padding-right: 80px;
+}
+#div1 #logo {
+  width: 100px;
 }
 #div1 #imgDiv1 {
   display: flex;
@@ -10807,7 +10810,7 @@ main {
   border-radius: 5px;
   width: 40px;
   height: 40px;
-  margin-right: 5px;
+  margin-right: 10px;
   position: relative;
 }
 #div1 #imgDiv1 div img {
@@ -10825,7 +10828,14 @@ main {
 }
 #div2 #bgCutDiv2 {
   background-color: hsl(228deg, 56%, 26%);
-  padding-bottom: 20px;
+}
+#div2 #bgCutDiv2 .progress {
+  background-color: hsl(229deg, 56%, 18%);
+  border: 2px solid hsl(229deg, 56%, 18%);
+  border-radius: 10px;
+}
+#div2 #bgCutDiv2 .progress .progress-bar {
+  background-image: linear-gradient(to left, hsl(335deg, 100%, 65%), hsl(6deg, 100%, 80%));
 }
 #div2 p {
   margin: 0;

@@ -22,7 +22,6 @@ main {
 }
 
 #div1 {
-    background-color: hsl(228, 56%, 26%);
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -30,7 +29,12 @@ main {
 
     #bgCutDiv1 {
         background-color: hsl(228, 56%, 26%);
-        padding-bottom: 20px;
+        border-radius: 10px 80px 10px 10px;
+        padding-right: 80px;
+    }
+
+    #logo {
+        width: 100px;
     }
 
     #imgDiv1 {
@@ -41,7 +45,7 @@ main {
             border-radius: 5px;
             width: 40px;
             height: 40px;
-            margin-right: 5px;
+            margin-right: 10px;
             position: relative;
             img {
                 position: absolute;
@@ -62,10 +66,22 @@ main {
 
     #bgCutDiv2 {
         background-color: hsl(228, 56%, 26%);
-        padding-bottom: 20px;
+
+        .progress {
+            background-color: hsl(229, 56%, 18%);
+            border: 2px solid hsl(229, 56%, 18%);
+            border-radius: 10px;
+            .progress-bar {
+                background-image: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%));
+                
+            }
+        }
     }
 
     p{
         margin: 0;
+    }
+
+    #gb {
     }
 }
