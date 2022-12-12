@@ -12,8 +12,8 @@ main {
     background-repeat: no-repeat;
     background-size: 100% 50%;
 
-    height: 800px;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     margin: auto;
 
     display: flex;
@@ -30,11 +30,11 @@ main {
     #bgCutDiv1 {
         background-color: hsl(228, 56%, 26%);
         border-radius: 10px 80px 10px 10px;
-        padding-right: 80px;
+        padding-right: 120px;
     }
 
     #logo {
-        width: 100px;
+        width: 120px;
     }
 
     #imgDiv1 {
@@ -60,12 +60,60 @@ main {
 
 #div2 {
     height: 150px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+
+    // BULLE
+    .talkbubble {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    width: 120px;
+    height: 50px;
+    
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+
+        p {
+            color: black;
+        }
+    }
+    
+    .talkbubble:before {
+    content:"";
+    position: absolute;
+    transform: rotate(270deg);
+    right: 0%;
+    top: 45px;
+    width: 0;
+    height: 0;
+    
+    border-top: 25px solid transparent;
+    border-right: 25px solid rgb(255, 255, 255);
+    border-bottom: 0px solid transparent;
+    }
+    
+    // .talkbubble p{
+    // position: inherit;
+    // width: inherit;
+    // height: inherit;
+    // background: inherit;
+    
+    // margin: 0;
+    // padding: 0;
+    
+    // border: none;
+    // resize: none;
+    // }
 
     #bgCutDiv2 {
         background-color: hsl(228, 56%, 26%);
+        border-radius: 10px;
 
         .progress {
             background-color: hsl(229, 56%, 18%);
@@ -73,13 +121,14 @@ main {
             border-radius: 10px;
             .progress-bar {
                 background-image: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%));
-                
+                border-radius: 10px;
             }
         }
     }
 
     p{
         margin: 0;
+        color: hsl(243, 100%, 93%);
     }
 
     #gb {

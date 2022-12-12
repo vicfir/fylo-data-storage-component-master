@@ -10780,8 +10780,8 @@ main {
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 50%;
-  height: 800px;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -10797,10 +10797,10 @@ main {
 #div1 #bgCutDiv1 {
   background-color: hsl(228deg, 56%, 26%);
   border-radius: 10px 80px 10px 10px;
-  padding-right: 80px;
+  padding-right: 120px;
 }
 #div1 #logo {
-  width: 100px;
+  width: 120px;
 }
 #div1 #imgDiv1 {
   display: flex;
@@ -10822,12 +10822,41 @@ main {
 
 #div2 {
   height: 150px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+}
+#div2 .talkbubble {
+  position: absolute;
+  top: -50px;
+  right: 50px;
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+}
+#div2 .talkbubble p {
+  color: black;
+}
+#div2 .talkbubble:before {
+  content: "";
+  position: absolute;
+  transform: rotate(270deg);
+  right: 0%;
+  top: 45px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 25px solid rgb(255, 255, 255);
+  border-bottom: 0px solid transparent;
 }
 #div2 #bgCutDiv2 {
   background-color: hsl(228deg, 56%, 26%);
+  border-radius: 10px;
 }
 #div2 #bgCutDiv2 .progress {
   background-color: hsl(229deg, 56%, 18%);
@@ -10836,9 +10865,11 @@ main {
 }
 #div2 #bgCutDiv2 .progress .progress-bar {
   background-image: linear-gradient(to left, hsl(335deg, 100%, 65%), hsl(6deg, 100%, 80%));
+  border-radius: 10px;
 }
 #div2 p {
   margin: 0;
+  color: hsl(243deg, 100%, 93%);
 }
 
 /*# sourceMappingURL=app.css.map */
