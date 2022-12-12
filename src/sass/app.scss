@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("../../public/img/bg-desktop.png");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+
+    height: 800px;
+    width: 95%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div1 {
+    background-color: hsl(228, 56%, 26%);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    #bgCutDiv1 {
+        background-color: hsl(228, 56%, 26%);
+        padding-bottom: 20px;
+    }
+
+    #imgDiv1 {
+        display: flex;
+        
+        div{
+            background-color: hsl(229, 57%, 11%);
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+    }
+}
+
+#div2 {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    #bgCutDiv2 {
+        background-color: hsl(228, 56%, 26%);
+        padding-bottom: 20px;
+    }
+
+    p{
+        margin: 0;
+    }
+}

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  background-color: hsl(229deg, 57%, 11%);
+  background-image: url("../../public/img/bg-desktop.png");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  height: 800px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#div1 {
+  background-color: hsl(228deg, 56%, 26%);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#div1 #bgCutDiv1 {
+  background-color: hsl(228deg, 56%, 26%);
+  padding-bottom: 20px;
+}
+#div1 #imgDiv1 {
+  display: flex;
+}
+#div1 #imgDiv1 div {
+  background-color: hsl(229deg, 57%, 11%);
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  position: relative;
+}
+#div1 #imgDiv1 div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#div2 {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#div2 #bgCutDiv2 {
+  background-color: hsl(228deg, 56%, 26%);
+  padding-bottom: 20px;
+}
+#div2 p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=app.css.map */
