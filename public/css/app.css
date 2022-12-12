@@ -10769,9 +10769,25 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: raleway;
+  src: url("../../public/font/static/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: ralewayBold;
+  src: url("../../public/font/static/Raleway-Bold.ttf");
+}
 body {
   margin: 0;
   height: 100vh;
+}
+
+p {
+  font-family: raleway;
+}
+
+.pBold {
+  font-family: ralewayBold;
 }
 
 main {
@@ -10835,12 +10851,18 @@ main {
   width: 120px;
   height: 50px;
   padding: 10px;
+  padding-top: 5px;
   border-radius: 5px;
   border: 0px solid rgb(255, 255, 255);
   background: rgb(255, 255, 255);
 }
 #div2 .talkbubble p {
   color: black;
+  font-size: 10px;
+  text-align: center;
+}
+#div2 .talkbubble p .big {
+  font-size: 25px;
 }
 #div2 .talkbubble:before {
   content: "";
